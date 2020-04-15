@@ -1,16 +1,17 @@
-package test;
+package technical.interview.calculator;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import technical.interview.calculator.Calculator;
 
-class PowTest {
-
+/**
+ * Unit test for Calculator.
+ */
+public class CalculatorTest 
+{
 	@Test
-	void testExponent0() {
+	public void testExponent0() {
 		
 		Calculator calc = new Calculator();
 		float result_0_0 = calc.calculate_pow(0, 0);
@@ -27,7 +28,7 @@ class PowTest {
 	}
 	
 	@Test
-	void testPositiveExponent() {
+	public void testPositiveExponent() {
 		
 		Calculator calc = new Calculator();
 		float result_5_5 = calc.calculate_pow(5, 5);
@@ -37,7 +38,7 @@ class PowTest {
 	}
 	
 	@Test
-	void testNegativeExponent() {
+	public void testNegativeExponent() {
 		
 		Calculator calc = new Calculator();
 		float result_5_neg5 = calc.calculate_pow(5, -5);
