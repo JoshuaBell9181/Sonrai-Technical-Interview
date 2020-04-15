@@ -43,7 +43,7 @@ public class CalculatorTest
 		Calculator calc = new Calculator();
 		float result_5_neg5 = calc.calculate_pow(5, -5);
 		
-		// 	3125 = 5 ^ 5
+		// 	0.00032 = 5 ^ -5
 		assertEquals(0.00032, result_5_neg5,0.000001);		
 	}
 
